@@ -3,6 +3,9 @@
 	width: 100px;
 	color:  $primary-text-color;
 	z-index: 999;
+    @include lg-screen {
+        margin-left: 30px;
+    }
 }
 
 .bars {
@@ -19,6 +22,10 @@
 	padding-top: 50px;
 	transition: left .5s linear;
 	z-index: 999;
+    @include lg-screen {
+        width: 100%;
+        padding-left: 60px;
+    }
 }
 
 #flyoutMenu a {
@@ -84,6 +91,10 @@ nav {
 	align-items: center;
 	padding: 0 30px;
     top: 0;
+    @include lg-screen {
+        background-color: $sub-text-color;
+        width: 30%;
+    }
 }
 
 .logo {
@@ -91,14 +102,14 @@ nav {
 }
 
 .logo h1 {
-	background: url("../imgs/logo.png");
-	background-size: cover;
-	width: 100px;
-	height: 35px;
+	// background: url("../imgs/logo.png");
+	// background-size: cover;
+	// width: 100px;
+	// height: 35px;
 	text-indent: -9999px;
 }
 
-.logo h1 a {
-	background-image: url("../imgs/logo.png");
-	background-size: cover;
-}
+// .logo h1 a {
+// 	background-image: url("../imgs/logo.png");
+// 	background-size: cover;
+// }

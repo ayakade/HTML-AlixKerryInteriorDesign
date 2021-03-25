@@ -1,6 +1,10 @@
 .footer {
     padding: 20px 0;
     text-align: center;
+    @include lg-screen {
+        text-align: left;
+        margin-left: 50px;
+    }
 }
 
 .footer img {
