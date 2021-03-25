@@ -35,12 +35,11 @@
     width: 200px;
     height: auto;
     margin-bottom: 20px;
-    @include lg-screen {
-        margin: 0;
-    }
-
 }
 
 .home h2 {
     margin-bottom: 30px;
+    @include lg-screen {
+        margin-bottom: 10px;
+    }
 }
