@@ -1,0 +1,26 @@
+// colors
+$primary-text-color: #423a2e;
+$sub-text-color: #ffffff;
+$background-color: #f5fdf7;
+
+// border 
+$border: 5px solid #dceaec;
+
+// screen size
+$xs-width: 320px;
+$sm-width: 768px;
+$md-width: 1024px;
+$lg-width: 1200px;
+
+@import 'layout';
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'button';
+@import 'cta';
+@import 'contact';
+@import 'home';
+@import 'gallery';
+@import 'services';
+@import 'about';
+@import 'casestudy';

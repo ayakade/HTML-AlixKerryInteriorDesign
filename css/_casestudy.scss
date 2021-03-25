@@ -1,0 +1,31 @@
+.casestudy h2 {
+    margin-bottom: 30px;
+}
+
+.casestudy .mainImage {
+    margin-bottom: 50px;
+}
+
+.casestudy p.introduction {
+    background-color: $background-color;
+    padding: 20px 15px;
+    margin-bottom: 50px;
+}
+
+.detail {
+    margin-bottom: 100px;
+}
+
+.casestudy .detail img {
+    margin-bottom: 10px;
+}
+
+.casestudy .row, .casestudy .column {
+    margin-bottom: 50px;
+}
+
+.room .title, .lounge .title, .cottage .title, .lobby .title {
+    background-color: $background-color;
+    padding: 20px 15px;
+    margin-top: 20px;
+}

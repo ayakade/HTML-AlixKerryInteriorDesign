@@ -1,0 +1,104 @@
+// burger menu
+.burgerMenu {
+	width: 100px;
+	color:  $primary-text-color;
+	z-index: 999;
+}
+
+.bars {
+	font-size: 30px;
+}
+
+#flyoutMenu {
+	background: $background-color;
+	width: 80%; 
+	height: 100vh;
+	position: absolute;
+	left: -100vw;
+	padding-left: 30px;
+	padding-top: 50px;
+	transition: left .5s linear;
+	z-index: 999;
+}
+
+#flyoutMenu a {
+	color: $primary-text-color; 
+	display: block;
+	margin-bottom: 20px;
+	font-size: 22px;
+	letter-spacing: 3px;
+}
+
+.checkBox {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	height: 70px;
+	display: block;
+	opacity: 0;
+	z-index: 999;
+}
+
+.checkBox:hover {
+	cursor: pointer;
+}
+
+.checkBox:checked ~ #flyoutMenu {
+	left: 0px;
+}
+
+.checkBox:checked ~ .bars {
+	color: $primary-text-color;
+	z-index: 999;
+	position: relative;
+}
+
+// nav
+nav {
+	margin-bottom: 100px;
+}
+
+.socialmedia {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.socialmedia i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.header .contact p {
+    margin-bottom: 10px;
+}
+
+// header
+.header {
+    background-color: $background-color;
+	height: 70px;
+	position: fixed;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+    top: 0;
+}
+
+.logo {
+	z-index: 10;
+}
+
+.logo h1 {
+	background: url("../imgs/logo.png");
+	background-size: cover;
+	width: 100px;
+	height: 35px;
+	text-indent: -9999px;
+}
+
+.logo h1 a {
+	background-image: url("../imgs/logo.png");
+	background-size: cover;
+}
