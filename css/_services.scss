@@ -30,9 +30,6 @@
 
 .intro.services h2 {
     margin-bottom: 10px;
-    @include lg-screen {
-        font-size: 28px;
-    }
 }
 
 .intro.services a.primary-button {
