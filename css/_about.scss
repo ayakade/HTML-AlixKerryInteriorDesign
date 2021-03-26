@@ -1,6 +1,9 @@
 /* about page */
 .bio {
     margin-bottom: 70px;
+    @include lg-screen {
+        flex-direction: row-reverse;
+    }
 }
 
 .bio img {
@@ -9,6 +12,16 @@
 
 .bio h2 {
     margin-bottom: 10px;
+    @include lg-screen {
+        margin: 30px 0;
+        font-size: 30px;
+    }
+}
+
+.bio .title {
+    @include lg-screen {
+        padding-right: 100px;
+    }
 }
 
 .awards {
@@ -16,26 +29,44 @@
     padding: 50px 0;
     border-top: $border;
     border-bottom: $border;
+    display: flex;
+    flex-direction: column;
+    @include lg-screen {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .awards h3 {
     font-size: 18px;
     margin-bottom: 20px;
+    @include lg-screen {
+        font-size: 20px;
+    }
 }
 
 .awards h4 {
     margin-bottom: 5px;
     font-size: 15px;
+    @include lg-screen {
+        font-size: 18px;
+    }
 }
 
 .awards p {
     margin-bottom: 30px;
     font-size: 13px;
+    @include lg-screen {
+        font-size: 16px;
+    }
 }
 
 .awards img {
     width: 100px;
     height: auto;
+    @include lg-screen {
+        width: 120px;
+    }
 }
 
 .awards .row:nth-child(2) {
@@ -47,23 +78,66 @@
 
 .testimonials {
     margin-bottom: 70px;
+    @include lg-screen {
+        margin-bottom: 100px;
+    }
 }
 
 .testimonials h3 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
+    @include lg-screen {
+        text-align: left;
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
 }
 
 .testimonial {
     padding: 0 50px;
+    @include lg-screen {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
 }
 
-.testimonial p {
+.testimonial img {
+    @include lg-screen {
+        width: 250px;
+        height: auto;
+        margin-right: 40px;
+    }
+}
+
+.testimonial .colmun {
     margin-bottom: 30px;
+    @include lg-screen {
+        background-color: $background-color;
+        padding: 30px;
+        margin: 0;
+    }
+}
+
+.testimonial h4 {
+    @include lg-screen {
+        font-size: 18px;
+    }
 }
 
 .testimonial .title {
     text-align: center;
     margin-bottom: 20px;
+    @include lg-screen {
+        text-align: left;
+    }
 }
+
+.testimonial .title p {
+    @include lg-screen {
+        font-size: 14px;
+    }
+}
+
