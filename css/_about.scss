@@ -78,9 +78,6 @@
 
 .testimonials {
     margin-bottom: 70px;
-    @include lg-screen {
-        margin-bottom: 100px;
-    }
 }
 
 .testimonials h3 {
@@ -97,6 +94,7 @@
 .testimonial {
     padding: 0 50px;
     @include lg-screen {
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         padding: 0;
@@ -106,8 +104,7 @@
 
 .testimonial img {
     @include lg-screen {
-        width: 250px;
-        height: auto;
+        width: 200px;
         margin-right: 40px;
     }
 }
