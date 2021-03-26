@@ -33,13 +33,6 @@ html, body {
 	min-height: 100%;
 }
 
-// container
-.container {
-	flex: 1 0 auto;
-    padding: 0 30px;
-    margin: 100px 0 50px 0;
-}
-
 // Mobile S
 @mixin xs-screen {
 	@media (max-width: $xs-width) {
@@ -83,4 +76,14 @@ html, body {
 	@media (min-width: $md-width) and (max-width: $lg-width) {
 	    @content;
 	}
+}
+
+// container
+.container {
+	flex: 1 0 auto;
+    padding: 0 30px;
+    margin: 100px 0 50px 0;
+    @include lg-screen {
+        padding: 0 100px;
+    }
 }
