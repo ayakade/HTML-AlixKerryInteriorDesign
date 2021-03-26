@@ -2,30 +2,86 @@
     margin-top: 50px;
 }
 
+.intro.services {
+    @include lg-screen {
+        margin-top: 70px;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
+.intro.services .title {
+    @include lg-screen {
+        padding: 0 50px;
+    }
+}
+
 .intro.services h2, .intro.services p{
     padding: 0 30px;
 }
 
 .intro.services img {
     margin-bottom: 30px;
+    @include lg-screen {
+        height: 500px;
+        width: auto;
+    }
 }
 
 .intro.services h2 {
     margin-bottom: 10px;
+    @include lg-screen {
+        font-size: 28px;
+    }
 }
 
-.serviceList {
+.intro.services a.primary-button {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: inline-block;
+    @include lg-screen {
+        margin-top: 20px;
+    }
+}
+
+#serviceList {
     margin-bottom: 100px;
 }
 
-.serviceMenu {
+.service {
     margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
+    @include lg-screen {
+        padding: 50px 0;
+        margin-bottom: 0;
+    }
 }
 
-.serviceMenu img {
+.service:nth-child(even) {
+    @include lg-screen {
+        flex-direction: row-reverse;
+        background-color: $background-color;
+    }
+}
+
+.service img {
     margin-bottom: 20px;
+    @include lg-screen {
+        height: auto;
+    }
 }
 
-.serviceMenu h3 {
+.service h3 {
     margin-bottom: 10px;
+    @include lg-screen {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+.service .colmun {
+    @include lg-screen {
+        padding-right: 50px;
+    }
 }
