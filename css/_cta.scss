@@ -6,4 +6,7 @@
 .cta h4 {
     margin-bottom: 25px;
     font-size: 24px;
+    @include lg-screen {
+        font-size: 28px;
+    }
 }
