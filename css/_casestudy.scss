@@ -4,12 +4,26 @@
 
 .casestudy .mainImage {
     margin-bottom: 50px;
+    @include lg-screen {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.casestudy .mainImage img {
+    @include lg-screen {
+        width: 800px;
+    }
 }
 
 .casestudy p.introduction {
     background-color: $background-color;
     padding: 20px 15px;
     margin-bottom: 50px;
+    @include lg-screen {
+        padding: 25px;
+        margin: 100px 0;
+    }
 }
 
 .detail {
@@ -20,12 +34,42 @@
     margin-bottom: 10px;
 }
 
+.detail h3 {
+    @include lg-screen {
+        margin-bottom: 10px;
+    }
+}
+
 .casestudy .row, .casestudy .column {
     margin-bottom: 50px;
+}
+
+.room, .lounge, .cottage, .lobby {
+    @include lg-screen {
+        margin: 100px 0;
+    }
 }
 
 .room .title, .lounge .title, .cottage .title, .lobby .title {
     background-color: $background-color;
     padding: 20px 15px;
     margin-top: 20px;
+    @include lg-screen {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 25px;
+    }
+}
+
+.room , .lounge .image, .cottage, .lobby {
+    @include lg-screen {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.cottage {
+    @include lg-screen {
+        flex-direction: row-reverse;
+    }
 }
