@@ -1,2 +1,2 @@
 # HTML-AlixKerryInteriorDesign
-Responsive website with HTML, CSS, JS
+Responsive website (Mobile & Laptop) with HTML, CSS, JS
