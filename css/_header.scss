@@ -23,7 +23,7 @@
 	transition: left .5s linear;
 	z-index: 999;
     @include lg-screen {
-        width: 100%;
+        width: 30%;
         padding-left: 60px;
     }
 }
@@ -93,7 +93,6 @@ nav {
     top: 0;
     @include lg-screen {
         background-color: $sub-text-color;
-        width: 30%;
     }
 }
 
